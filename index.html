@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 01 - Random Meal Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Random Meal Generator</h1>
+        <h2 class="header__subtitle">feeling hungry?</h2>
+        <button id="get_meal" class="header__button">Get Meal</button>
+    </header>
+    <main id="meal" class="main hidden">
+        <article class="meal">
+            <img id="meal_image" class="meal__image" src="http://placehold.it/350x350/000000">
+            <section class="meal__information">
+                <h1 id="meal_name" class="meal__name">food name</h1>
+                <p id="meal_description" class="meal__description">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Minus exercitationem ipsam commodi fuga quam soluta non laborum blanditiis dignissimos harum ad,
+                    perspiciatis fugit suscipit sit pariatur consectetur quidem at quod?</p>
+            </section>
+        </article>
+        <article class="recipe">
+            <section class="recipe__information">
+                <h1 class="recipe__title">Recipe</h1>
+                <ul id="meal_recipe" class="recipe__list">
+                </ul>
+            </section>
+            <section class="recipe__video">
+                <h1 class="recipe_title-video">Video Tutorial</h1>
+                <iframe id="meal_video" class="video" width="350" height="350"></iframe>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    background-color: #F4DFB6;
+    font-family: "Open Sans", sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .header__title {
+        color: #9A4444;
+        margin: 15px 0px 0px 0px;
+    }
+
+    & .header__subtitle {
+        color: #DE8F5F;
+        margin: 0;
+    }
+
+    & .header__button {
+        margin-top: 25px;
+        background-color: #9A4444;
+        color: #F4DFB6;
+        border: none;
+        border-radius: 5px;
+
+        width: 128px;
+        height: 32px;
+
+        transition: 0.5s;
+    }
+
+    & .header__button:hover {
+        width: 156px;
+        height: 46px;
+        font-size: 25px;
+        border: 1px solid #D6D46D;
+
+        color: #D6D46D;
+        cursor: pointer;
+    }
+}
+
+.meal {
+    display: flex;
+    margin: 25px;
+    padding: 25px;
+    background-color: #DE8F5F;
+    border-radius: 10px;
+
+    & .meal__image {
+        max-width: 350px;
+        min-width: 350px;
+
+        max-height: 350px;
+        min-height: 350px;
+
+        object-fit: cover;
+    }
+
+    & .meal__information {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        color: #F4DFB6;
+
+        & .meal__name {
+            margin-top: 5px;
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+
+        & .meal__description {
+            font-size: 16px;
+        }
+
+    }
+}
+
+.recipe {
+    display: flex;
+    margin: 25px;
+
+    color: #F4DFB6;
+
+    gap: 10px;
+
+    & .recipe__information {
+        padding: 25px;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        background-color: #DE8F5F;
+        border-radius: 10px;
+
+        & .recipe__title {
+            font-size: 30px;
+            margin: 0;
+        }
+    }
+
+    & .recipe__video {
+        width: 30%;
+        padding: 25px;
+        background-color: #DE8F5F;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+
+        & .recipe_title-video {
+            font-size: 30px;
+            margin: 0;
+        }
+
+
+    }
+
+
+}
+
+.hidden {
+    display: none;
+}
